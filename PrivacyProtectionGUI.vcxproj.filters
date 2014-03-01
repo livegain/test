@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{909d7c90-5ca1-4e76-bae7-2512765e21f0}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7113631b-7fe1-409f-afbb-b5a1cd53dbd7}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{3dadf30e-2637-4be2-8326-848bc311cd12}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
+    </Filter>
+    <Filter Include="Import">
+      <UniqueIdentifier>{336adb96-1631-4eba-bb58-eb423a63885a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Import\tinyxml">
+      <UniqueIdentifier>{fd1ea877-73ce-4adb-9097-00d3f59f4e65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Import\bkwin">
+      <UniqueIdentifier>{f39f7842-21b6-4418-904c-f5159d58ddef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Import\Common">
+      <UniqueIdentifier>{b48dad70-6977-42a2-b8ef-34570c956761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kuc">
+      <UniqueIdentifier>{e7c5f310-fb48-4963-a3a6-59ce8a8a2b0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Carmera">
+      <UniqueIdentifier>{261a366c-77e8-4498-ad9f-71f64eb27696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rule">
+      <UniqueIdentifier>{e86f7a5a-4a5e-4a28-99e9-f53808a1e541}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="beikesafemsgbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KActor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KAddSoftwareDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KClipBoardDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KLogic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kmaindlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KWarningDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListViewCtrlEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PrivacyProtectionGUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\tinyxml\tinystr.cpp">
+      <Filter>Import\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\tinyxml\tinyxml.cpp">
+      <Filter>Import\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\tinyxml\tinyxmlerror.cpp">
+      <Filter>Import\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\tinyxml\tinyxmlparser.cpp">
+      <Filter>Import\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\common\KXmlReader.cpp">
+      <Filter>Import\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\common\KXmlWriter.cpp">
+      <Filter>Import\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="kuc\kxeuc.cpp">
+      <Filter>kuc</Filter>
+    </ClCompile>
+    <ClCompile Include="kuc\ucipc.cpp">
+      <Filter>kuc</Filter>
+    </ClCompile>
+    <ClCompile Include="kuc\ucipc_tool.cpp">
+      <Filter>kuc</Filter>
+    </ClCompile>
+    <ClCompile Include="Carmera\serachcamera.cpp">
+      <Filter>Carmera</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KBlackRule.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KDirRelateRule.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KFileDirRule.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KFileExtensionRule.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KFileExtRelateRule.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KFileNameRelateRule.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KFileNameRule.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KFilePathRule.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KFunction.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KProcFileRule.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KProcNameCache.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KProcPathRule.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KRuleConfig.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KRuleImpl.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KRuleTestImpl.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KRuleTree.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KSignCache.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KSignDataRule.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KVariableString.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\KWhiteRule.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+    <ClCompile Include="rule\log_file.cpp">
+      <Filter>rule</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AskExitDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="beikesafemsgbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KActor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KAddSoftwareDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KClipBoardDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KLogic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kmaindlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kmsgdefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KWarningDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListViewCtrlEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinAskDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitorItemList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tinyxml\tinystr.h">
+      <Filter>Import\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tinyxml\tinyxml.h">
+      <Filter>Import\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bkwin\bkcolor.h">
+      <Filter>Import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bkwin\bkdlgview.h">
+      <Filter>Import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bkwin\bkimage.h">
+      <Filter>Import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bkwin\bklistview.h">
+      <Filter>Import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bkwin\bkobject.h">
+      <Filter>Import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bkwin\bkskin.h">
+      <Filter>Import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bkwin\bktheme.h">
+      <Filter>Import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bkwin\bkwnd.h">
+      <Filter>Import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bkwin\bkwndcmnctrl.h">
+      <Filter>Import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bkwin\bkwnddlg.h">
+      <Filter>Import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bkwin\bkwndnotify.h">
+      <Filter>Import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bkwin\bkwndpanel.h">
+      <Filter>Import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bkwin\bkwndrichtxt.h">
+      <Filter>Import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bkwin\bkwndstyle.h">
+      <Filter>Import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bkwin\bkwndtabctrl.h">
+      <Filter>Import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\common\KXmlReader.h">
+      <Filter>Import\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\common\KXmlWriter.h">
+      <Filter>Import\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="kuc\kxeuc.h">
+      <Filter>kuc</Filter>
+    </ClInclude>
+    <ClInclude Include="kuc\md5.h">
+      <Filter>kuc</Filter>
+    </ClInclude>
+    <ClInclude Include="kuc\ucipc.h">
+      <Filter>kuc</Filter>
+    </ClInclude>
+    <ClInclude Include="kuc\ucipc_def.h">
+      <Filter>kuc</Filter>
+    </ClInclude>
+    <ClInclude Include="kuc\ucipc_tool.h">
+      <Filter>kuc</Filter>
+    </ClInclude>
+    <ClInclude Include="Carmera\serachcamera.h">
+      <Filter>Carmera</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\IRule.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KBlackRule.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="KCommandLine.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KDirRelateRule.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KFileDirRule.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KFileExtensionRule.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KFileExtRelateRule.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KFileNameRelateRule.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KFileNameRule.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KFilePathRule.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KFunction.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KProcFileRule.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KProcNameCache.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KProcPathRule.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KRegister.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KResultRule.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KRuleConfig.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KRuleImpl.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KRuleTestImpl.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KRuleTree.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KSignCache.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KSignDataRule.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KSystemEnvirVar.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KTree.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KVariableString.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\KWhiteRule.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\log_file.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\ntldr.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+    <ClInclude Include="rule\signverify.h">
+      <Filter>rule</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\include\bkres\bkres.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="PrivacyProtectionGUI.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bkwinres.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\PrivacyProtectionGUI.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

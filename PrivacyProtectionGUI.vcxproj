@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FF940186-D726-4989-AE3D-42006AD975C7}</ProjectGuid>
+    <RootNamespace>PrivacyProtectionGUI</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60315.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)PrivacyProtectionGUI.tlb</TypeLibraryName>
+      <HeaderFileName>PrivacyProtectionGUI.h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>PrivacyProtectionGUI_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>PrivacyProtectionGUI_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./rule;./;../include;../include/tinyxml;../include/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_DEBUG;_FRAMEWORK_KIS_LINK_H_;KIS_USECSTRING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;KIS_MAIN_EXE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0000</Culture>
+      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\product\win32d\kprivacy.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>../include/buildcfg/uac_admin.xml;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)PrivacyProtectionGUI.tlb</TypeLibraryName>
+      <HeaderFileName>PrivacyProtectionGUI.h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>PrivacyProtectionGUI_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>PrivacyProtectionGUI_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>./rule;./;../include;../include/tinyxml;../include/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;NDEBUG;KIS_OEM_DISABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;K_PRIVACY_EXE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0000</Culture>
+      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\product\win32\kprivacy.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\product\win32\dbginfo\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>false</Profile>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>../include/buildcfg/uac_admin.xml;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="beikesafemsgbox.cpp" />
+    <ClCompile Include="KActor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="KAddSoftwareDlg.cpp" />
+    <ClCompile Include="KClipBoardDlg.cpp" />
+    <ClCompile Include="KLogic.cpp" />
+    <ClCompile Include="kmaindlg.cpp" />
+    <ClCompile Include="KWarningDlg.cpp" />
+    <ClCompile Include="ListViewCtrlEx.cpp" />
+    <ClCompile Include="PrivacyProtectionGUI.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\include\tinyxml\tinystr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\include\tinyxml\tinyxml.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\include\tinyxml\tinyxmlerror.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\include\tinyxml\tinyxmlparser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\include\common\KXmlReader.cpp" />
+    <ClCompile Include="..\include\common\KXmlWriter.cpp" />
+    <ClCompile Include="kuc\kxeuc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="kuc\ucipc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="kuc\ucipc_tool.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Carmera\serachcamera.cpp" />
+    <ClCompile Include="rule\KBlackRule.cpp" />
+    <ClCompile Include="rule\KDirRelateRule.cpp" />
+    <ClCompile Include="rule\KFileDirRule.cpp" />
+    <ClCompile Include="rule\KFileExtensionRule.cpp" />
+    <ClCompile Include="rule\KFileExtRelateRule.cpp" />
+    <ClCompile Include="rule\KFileNameRelateRule.cpp" />
+    <ClCompile Include="rule\KFileNameRule.cpp" />
+    <ClCompile Include="rule\KFilePathRule.cpp" />
+    <ClCompile Include="rule\KFunction.cpp" />
+    <ClCompile Include="rule\KProcFileRule.cpp" />
+    <ClCompile Include="rule\KProcNameCache.cpp" />
+    <ClCompile Include="rule\KProcPathRule.cpp" />
+    <ClCompile Include="rule\KRuleConfig.cpp" />
+    <ClCompile Include="rule\KRuleImpl.cpp" />
+    <ClCompile Include="rule\KRuleTestImpl.cpp" />
+    <ClCompile Include="rule\KRuleTree.cpp" />
+    <ClCompile Include="rule\KSignCache.cpp" />
+    <ClCompile Include="rule\KSignDataRule.cpp" />
+    <ClCompile Include="rule\KVariableString.cpp" />
+    <ClCompile Include="rule\KWhiteRule.cpp" />
+    <ClCompile Include="rule\log_file.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AskExitDlg.h" />
+    <ClInclude Include="beikesafemsgbox.h" />
+    <ClInclude Include="KActor.h" />
+    <ClInclude Include="KAddSoftwareDlg.h" />
+    <ClInclude Include="KClipBoardDlg.h" />
+    <ClInclude Include="KLogic.h" />
+    <ClInclude Include="kmaindlg.h" />
+    <ClInclude Include="kmsgdefine.h" />
+    <ClInclude Include="KWarningDlg.h" />
+    <ClInclude Include="ListViewCtrlEx.h" />
+    <ClInclude Include="MinAskDlg.h" />
+    <ClInclude Include="MonitorItemList.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\include\tinyxml\tinystr.h" />
+    <ClInclude Include="..\include\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\include\bkwin\bkcolor.h" />
+    <ClInclude Include="..\include\bkwin\bkdlgview.h" />
+    <ClInclude Include="..\include\bkwin\bkimage.h" />
+    <ClInclude Include="..\include\bkwin\bklistview.h" />
+    <ClInclude Include="..\include\bkwin\bkobject.h" />
+    <ClInclude Include="..\include\bkwin\bkskin.h" />
+    <ClInclude Include="..\include\bkwin\bktheme.h" />
+    <ClInclude Include="..\include\bkwin\bkwnd.h" />
+    <ClInclude Include="..\include\bkwin\bkwndcmnctrl.h" />
+    <ClInclude Include="..\include\bkwin\bkwnddlg.h" />
+    <ClInclude Include="..\include\bkwin\bkwndnotify.h" />
+    <ClInclude Include="..\include\bkwin\bkwndpanel.h" />
+    <ClInclude Include="..\include\bkwin\bkwndrichtxt.h" />
+    <ClInclude Include="..\include\bkwin\bkwndstyle.h" />
+    <ClInclude Include="..\include\bkwin\bkwndtabctrl.h" />
+    <ClInclude Include="..\include\common\KXmlReader.h" />
+    <ClInclude Include="..\include\common\KXmlWriter.h" />
+    <ClInclude Include="kuc\kxeuc.h" />
+    <ClInclude Include="kuc\md5.h" />
+    <ClInclude Include="kuc\ucipc.h" />
+    <ClInclude Include="kuc\ucipc_def.h" />
+    <ClInclude Include="kuc\ucipc_tool.h" />
+    <ClInclude Include="Carmera\serachcamera.h" />
+    <ClInclude Include="rule\IRule.h" />
+    <ClInclude Include="rule\KBlackRule.h" />
+    <ClInclude Include="KCommandLine.h" />
+    <ClInclude Include="rule\KDirRelateRule.h" />
+    <ClInclude Include="rule\KFileDirRule.h" />
+    <ClInclude Include="rule\KFileExtensionRule.h" />
+    <ClInclude Include="rule\KFileExtRelateRule.h" />
+    <ClInclude Include="rule\KFileNameRelateRule.h" />
+    <ClInclude Include="rule\KFileNameRule.h" />
+    <ClInclude Include="rule\KFilePathRule.h" />
+    <ClInclude Include="rule\KFunction.h" />
+    <ClInclude Include="rule\KProcFileRule.h" />
+    <ClInclude Include="rule\KProcNameCache.h" />
+    <ClInclude Include="rule\KProcPathRule.h" />
+    <ClInclude Include="rule\KRegister.h" />
+    <ClInclude Include="rule\KResultRule.h" />
+    <ClInclude Include="rule\KRuleConfig.h" />
+    <ClInclude Include="rule\KRuleImpl.h" />
+    <ClInclude Include="rule\KRuleTestImpl.h" />
+    <ClInclude Include="rule\KRuleTree.h" />
+    <ClInclude Include="rule\KSignCache.h" />
+    <ClInclude Include="rule\KSignDataRule.h" />
+    <ClInclude Include="rule\KSystemEnvirVar.h" />
+    <ClInclude Include="rule\KTree.h" />
+    <ClInclude Include="rule\KVariableString.h" />
+    <ClInclude Include="rule\KWhiteRule.h" />
+    <ClInclude Include="rule\log_file.h" />
+    <ClInclude Include="rule\ntldr.h" />
+    <ClInclude Include="rule\signverify.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\include\bkres\bkres.rc" />
+    <ResourceCompile Include="PrivacyProtectionGUI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bkwinres.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\PrivacyProtectionGUI.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
